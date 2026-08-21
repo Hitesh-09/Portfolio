@@ -13,38 +13,30 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I am a Computer Science undergraduate at <b>SRMIST Chennai</b> with strong foundations in Data Structures, Algorithms, DBMS, and Operating Systems.
               <br />
               <br />
-              I’m proficient in
+              I am experienced in backend and full-stack application development using
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Python, Flask, Node.js, C++, C#, and SQL-based databases{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — with strong expertise in REST API development and modular architecture design.
               <br />
               <br />
-              My key areas of interest include developing
+              My key fields of interest include building
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Full-Stack Web Applications, Agentic AI & ML Systems,{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              and creating immersive games using <b className="purple">Unity & C#</b>.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              Whenever possible, I apply my problem-solving skills to build scalable solutions like <b className="purple">KrishiMitra</b> (AI Farm Advisor), <b className="purple">TrainMate</b>, and deep learning models for healthcare vision systems.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

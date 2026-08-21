@@ -9,8 +9,18 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title style={{ fontWeight: "700" }}>{props.title}</Card.Title>
+        {props.subtitle && (
+          <Card.Subtitle style={{ color: "var(--accent)", fontSize: "0.9em", marginBottom: "10px" }}>
+            {props.subtitle}
+          </Card.Subtitle>
+        )}
+        {props.techStack && (
+          <p style={{ color: "var(--success-accent)", fontSize: "0.85em", fontWeight: "600", marginBottom: "10px" }}>
+            {props.techStack}
+          </p>
+        )}
+        <Card.Text style={{ textAlign: "justify", fontSize: "0.95em" }}>
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
