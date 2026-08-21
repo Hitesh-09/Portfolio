@@ -37,7 +37,9 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
-          <span className="brand-name">Portfolio</span>
+          <span className="brand-name" style={{ color: "var(--accent)", fontWeight: "800", letterSpacing: "1.5px" }}>
+            🦇 HITESH // BATCAVE
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

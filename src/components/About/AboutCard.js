@@ -1,118 +1,117 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Tilt from "react-parallax-tilt";
 import { ImPointRight } from "react-icons/im";
-import { FaGraduationCap, FaBriefcase, FaAward, FaCertificate, FaLightbulb } from "react-icons/fa";
+import { FaGraduationCap, FaBriefcase, FaAward, FaCertificate } from "react-icons/fa";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Shimpi Hitesh Rajesh</span> from <span className="purple">Chennai, India</span>.
+    <Tilt glareEnable={true} glareMaxOpacity={0.15} glareColor="#facc15" scale={1.01} tiltMaxAngleX={8} tiltMaxAngleY={8}>
+      <Card className="quote-card-view" style={{ background: "rgba(17, 20, 32, 0.6)", padding: "10px", borderRadius: "20px", border: "1px solid rgba(250, 204, 21, 0.25)", backdropFilter: "blur(10px)" }}>
+        <Card.Body>
+          <blockquote className="blockquote mb-0">
+            <p style={{ textAlign: "justify", fontSize: "1.05em", lineHeight: "1.7", color: "#cbd5e1" }}>
+              Greetings. I am <span style={{ color: "#facc15", fontWeight: "700" }}>Hitesh Shimpi</span>, operating from <span style={{ color: "#facc15" }}>Chennai, Tamil Nadu</span>.
+              <br />
+              I am a Computer Science undergraduate at <span style={{ color: "#facc15" }}>SRM Institute of Science and Technology</span> (Expected May 2027) with an academic record of <span style={{ color: "#facc15", fontWeight: "700" }}>8.72 / 10 CGPA</span>.
+              <br />
+              <br />
+              Operating in the realm of <strong style={{ color: "#f8fafc" }}>Backend Engineering, Machine Learning, and Deep Learning</strong>, I design high-throughput REST APIs, cloud infrastructure on AWS, PySpark ETL pipelines, and neural vision systems.
+            </p>
+
             <br />
-            I’m currently pursuing B.Tech in <span className="purple">Computer Science and Engineering</span> at <span className="purple">SRM Institute of Science and Technology</span> (2023 - 2027) with a CGPA of <span className="purple">8.66 / 10</span>.
+            <h4 style={{ color: "#facc15", fontSize: "1.25em", textAlign: "left", letterSpacing: "1px", textTransform: "uppercase", fontWeight: "700" }}>
+              <FaGraduationCap /> Dossier // Education & Academics
+            </h4>
+            <ul style={{ textAlign: "left", color: "#cbd5e1" }}>
+              <li className="about-activity">
+                <strong style={{ color: "#f8fafc" }}>SRM Institute of Science and Technology</strong> (Expected May 2027)
+                <br />
+                <span style={{ color: "#facc15" }}>B.Tech - Computer Science and Engineering</span> · Chennai, Tamil Nadu | CGPA: <strong style={{ color: "#facc15" }}>8.72 / 10</strong>
+              </li>
+              <li className="about-activity" style={{ marginTop: "10px" }}>
+                <strong style={{ color: "#f8fafc" }}>KKJR Vidyalaya</strong> (Jun 2022 – Apr 2023)
+                <br />
+                Intermediate (Class XII) · Jalgaon, Maharashtra
+              </li>
+              <li className="about-activity" style={{ marginTop: "10px" }}>
+                <strong style={{ color: "#f8fafc" }}>St. Joseph Convent School</strong> (Jun 2020 – Apr 2021)
+                <br />
+                Matriculation (Class X) · Jalgaon, Maharashtra
+              </li>
+            </ul>
+
             <br />
-            <br />
-            I have strong foundations in Data Structures, Algorithms, DBMS, and Operating Systems, with experience in backend and full-stack application development using Python, Flask, Node.js, C#, C++, and SQL databases.
+            <h4 style={{ color: "#facc15", fontSize: "1.25em", textAlign: "left", letterSpacing: "1px", textTransform: "uppercase", fontWeight: "700" }}>
+              <FaBriefcase /> Dossier // Field Experience
+            </h4>
+            <ul style={{ textAlign: "left", color: "#cbd5e1" }}>
+              <li className="about-activity">
+                <strong style={{ color: "#f8fafc" }}>Technical Intern (AICTE)</strong> | <span style={{ color: "#facc15", fontWeight: "600" }}>AI/ML Developer</span> (Apr 2024 – Jun 2024) · Chennai, Tamil Nadu
+                <br />
+                • Engineered a 6-class deep learning rice leaf disease detection system utilizing <strong style={{ color: "#f8fafc" }}>EfficientNetB0</strong> with 224×224 image preprocessing, normalization, and data augmentation.
+                <br />
+                • Amplified feature representation by integrating <strong style={{ color: "#f8fafc" }}>CBAM attention mechanisms</strong> and <strong style={{ color: "#f8fafc" }}>GeM pooling</strong>, trained with Adam optimizer and categorical cross-entropy.
+              </li>
+            </ul>
+
+          <br />
+          <h4 style={{ color: "#facc15", fontSize: "1.25em", textAlign: "left", letterSpacing: "1px", textTransform: "uppercase", fontWeight: "700" }}>
+            <FaCertificate /> Dossier // Credentials & Intellectual Property
+          </h4>
+          <ul style={{ textAlign: "left", color: "#cbd5e1" }}>
+            <li className="about-activity">
+              ⚡ <strong style={{ color: "#f8fafc" }}>AWS Certified Cloud Practitioner</strong>
+            </li>
+            <li className="about-activity">
+              ⚡ <strong style={{ color: "#f8fafc" }}>AWS Certified AI Practitioner</strong>
+            </li>
+            <li className="about-activity">
+              ⚡ <strong style={{ color: "#f8fafc" }}>Databricks Badges:</strong> Apache Spark, Lakeflow, Data Pipelines, ETL
+            </li>
+            <li className="about-activity" style={{ marginTop: "6px" }}>
+              🛡️ <strong style={{ color: "#f8fafc" }}>Patent:</strong> Smart Blind Spot Detection for Vehicles Using Multi-Sensor Integration and AI-Based Warning Mechanisms
+            </li>
+          </ul>
+
+          <br />
+          <h4 style={{ color: "#facc15", fontSize: "1.25em", textAlign: "left", letterSpacing: "1px", textTransform: "uppercase", fontWeight: "700" }}>
+            <FaAward /> Dossier // Hackathons & Missions
+          </h4>
+          <ul style={{ textAlign: "left", color: "#cbd5e1" }}>
+            <li className="about-activity">
+              🏆 <strong style={{ color: "#f8fafc" }}>Guidewire DEVTRAILS ’26</strong> (2026)
+            </li>
+            <li className="about-activity">
+              🏆 <strong style={{ color: "#f8fafc" }}>Accenture Databricks</strong> (2026)
+            </li>
+            <li className="about-activity">
+              🏆 <strong style={{ color: "#f8fafc" }}>Infosys HackWithInfy ’26</strong> (2026)
+            </li>
+          </ul>
+
+          <br />
+          <p style={{ textAlign: "justify", color: "#cbd5e1" }}>
+            Off-duty interests and nocturnal pursuits:
           </p>
 
-          <br />
-          <h4 style={{ color: "var(--accent)", fontSize: "1.3em", textAlign: "left" }}>
-            <FaGraduationCap /> Education
-          </h4>
-          <ul style={{ textAlign: "left" }}>
+          <ul style={{ color: "#cbd5e1" }}>
             <li className="about-activity">
-              <strong>SRM Institute of Science and Technology</strong> (2023 - 2027)
-              <br />
-              <span className="purple">B.Tech - Computer Science and Engineering</span> · Kattankulathur | CGPA: <strong>8.66 / 10</strong>
+              <ImPointRight style={{ color: "#facc15" }} /> Exploring AI Architectures & Cloud Systems ⚡
             </li>
-            <li className="about-activity" style={{ marginTop: "10px" }}>
-              <strong>K.K.J.R Uchha Madhyamik Vidyalaya</strong> (2023)
-              <br />
-              Class XII · Science · Chalisgaon, Maharashtra | Percentage: <strong>70.1%</strong>
+            <li className="about-activity">
+              <ImPointRight style={{ color: "#facc15" }} /> System Optimization & Algorithmic Problem Solving 🦇
             </li>
           </ul>
 
-          <br />
-          <h4 style={{ color: "var(--accent)", fontSize: "1.3em", textAlign: "left" }}>
-            <FaBriefcase /> Experience
-          </h4>
-          <ul style={{ textAlign: "left" }}>
-            <li className="about-activity">
-              <strong>Team Envision</strong> | <span className="purple">Game Developer · Team Head</span> (May 2025 - Present)
-              <br />
-              Implemented core gameplay mechanics using Unity and C#, ensuring smooth performance and optimised rendering across devices.
-            </li>
-            <li className="about-activity" style={{ marginTop: "10px" }}>
-              <strong>Swift Coding Club SRM</strong> | <span className="purple">Corporate Head</span> (Aug 2023 - Aug 2025)
-              <br />
-              Contributed with peers to design and manage “An Apple a Day,” an educational tech series introducing Apple ecosystem concepts.
-            </li>
-          </ul>
-
-          <br />
-          <h4 style={{ color: "var(--accent)", fontSize: "1.3em", textAlign: "left" }}>
-            <FaLightbulb /> Patents
-          </h4>
-          <ul style={{ textAlign: "left" }}>
-            <li className="about-activity">
-              <strong>Smart Blind Spot Detection And Distance Measurement System For Vehicles Using Multi-Sensor Integration And AI-Based Warning Mechanisms</strong>
-              <br />
-              Status: <span className="purple">PENDING (Jan 2026)</span> · Chennai, India
-            </li>
-          </ul>
-
-          <br />
-          <h4 style={{ color: "var(--accent)", fontSize: "1.3em", textAlign: "left" }}>
-            <FaCertificate /> Certifications & Skill Tests
-          </h4>
-          <ul style={{ textAlign: "left" }}>
-            <li className="about-activity">
-              <strong>NPTEL:</strong> Programming in JAVA (Oct 2024 · NPTEL24CS105S252505223)
-            </li>
-            <li className="about-activity">
-              <strong>CodeChef Skill Test:</strong> Data Structures and Algorithms (<span className="purple">93%</span>)
-            </li>
-            <li className="about-activity">
-              <strong>CodeChef Skill Test:</strong> Operating Systems (<span className="purple">96%</span>)
-            </li>
-          </ul>
-
-          <br />
-          <h4 style={{ color: "var(--accent)", fontSize: "1.3em", textAlign: "left" }}>
-            <FaAward /> Hackathons & Volunteering
-          </h4>
-          <ul style={{ textAlign: "left" }}>
-            <li className="about-activity">
-              <strong>Hackathons:</strong> Adobe India Hackathon, Guidewire DEVTrails'26, Accenture Databricks, Infosys Hackwithinfy' 26, Capital One Launchpad, X-PLAY GAME JAM
-            </li>
-            <li className="about-activity" style={{ marginTop: "8px" }}>
-              <strong>Microsoft Volunteering:</strong> Event Organizer for Technical Workshop "Hack With India" (Microsoft Chennai)
-            </li>
-          </ul>
-
-          <br />
-          <p style={{ textAlign: "justify" }}>
-            Outside of technical work and coding, I love engaging in activities that keep me creative:
+          <p style={{ color: "#facc15", fontWeight: "600", marginTop: "15px" }}>
+            "The night is darkest just before the build succeeds."{" "}
           </p>
-
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Hitesh Shimpi</footer>
-        </blockquote>
+          <footer className="blockquote-footer" style={{ color: "#94a3b8" }}>Hitesh Shimpi</footer>
+        </blockquote >
       </Card.Body>
     </Card>
+    </Tilt>
   );
 }
 

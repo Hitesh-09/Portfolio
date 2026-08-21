@@ -7,10 +7,11 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
+import Tilt from "react-parallax-tilt";
+
 function About() {
   return (
     <>
-      {" "}
       <Particle />
       <Container fluid className="about-section">
         <Container>
@@ -23,8 +24,8 @@ function About() {
                 paddingBottom: "50px",
               }}
             >
-              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Know Who <strong className="purple">I'M</strong>
+              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", color: "#f8fafc" }}>
+                Know Who <strong style={{ color: "#facc15" }}>I'M</strong>
               </h1>
               <Aboutcard />
             </Col>
@@ -33,17 +34,19 @@ function About() {
               style={{ paddingTop: "120px", paddingBottom: "50px" }}
               className="about-img"
             >
-              <img src={laptopImg} alt="about" className="img-fluid" />
+              <Tilt glareEnable={true} glareMaxOpacity={0.25} glareColor="#facc15" scale={1.03} tiltMaxAngleX={15} tiltMaxAngleY={15}>
+                <img src={laptopImg} alt="about" className="img-fluid" style={{ filter: "drop-shadow(0 0 20px rgba(250, 204, 21, 0.3))" }} />
+              </Tilt>
             </Col>
           </Row>
           <h1 className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
+            Professional <strong style={{ color: "#facc15" }}>Skillset </strong>
           </h1>
 
           <Techstack />
 
           <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
+            <strong style={{ color: "#facc15" }}>Tools</strong> I use
           </h1>
           <Toolstack />
 
